@@ -1,0 +1,28 @@
+.navbar {
+  padding: 0.3rem 5rem;
+  border: 1px solid $primary-text-color;
+  &-brand {
+    img {
+      height: 50px;
+    }
+  }
+  .number-phone {
+    color: $primary-color;
+    &:hover {
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+  .navbar-nav {
+    li.nav-item>a.nav-link {
+      color: $primary-text-color;
+      font-weight: 500;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    li.active>a.nav-link {
+      color: $primary-color;
+    }
+  }
+}

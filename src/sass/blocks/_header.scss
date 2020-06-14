@@ -1,0 +1,47 @@
+header {
+  background: url('../img/bg/bg-header.png') center (center/cover) no-repeat;
+  padding: 15rem 3rem;
+  p {
+    font-weight: 300;
+    color: $secondary-text-color;
+    text-align: justify;
+  }
+  h4{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: $secondary-text-color;
+    >span {
+      color: $primary-color;
+    }
+  }
+  form {
+    border: double 1rem $primary-color-text;
+    background: rgba($primary-color-text, 0.95);
+    background-clip: padding-box;
+    padding: 1.5rem;
+    span {
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 1em;
+    }
+    input {
+      width: 100%;
+      padding: 1rem;
+      background-color: transparent;
+      border: 2px solid $primary-color;
+      border-radius: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      // Специальный префикс, чтобы ихменить цвет инпутов в разных браузерах
+      &::-webkit-input-placeholder {
+        color: $primary-color;
+      }
+      &:-moz-input-placeholder {
+        color: $primary-color;
+      }
+      &:-ms-input-placeholder {
+        color: $primary-color;
+      }
+    }
+  }
+}
