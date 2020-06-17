@@ -1,5 +1,5 @@
 header {
-  background: url('../img/bg/bg-header.png') center (center/cover) no-repeat;
+  @include background-img('../img/bg/bg-header.png');
   padding: 15rem 3rem;
   p {
     font-weight: 300;
@@ -32,16 +32,7 @@ header {
       border-radius: 0.5rem;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
-      // Специальный префикс, чтобы ихменить цвет инпутов в разных браузерах
-      &::-webkit-input-placeholder {
-        color: $primary-color;
-      }
-      &:-moz-input-placeholder {
-        color: $primary-color;
-      }
-      &:-ms-input-placeholder {
-        color: $primary-color;
-      }
+      @include input-color($primary-color);
     }
   }
 }

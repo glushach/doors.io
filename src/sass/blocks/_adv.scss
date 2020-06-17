@@ -1,0 +1,20 @@
+.adv {
+  @include background-img('../img/bg/bg-adv.jpg');
+  color: $primary-color-text;
+  position: relative;
+  &::before {
+    @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text);
+  }
+  .row {
+    padding: 3rem 0rem;
+  }
+  h6 {
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.75em;
+    text-align: center;
+  }
+}

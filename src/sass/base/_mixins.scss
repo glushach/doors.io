@@ -1,0 +1,27 @@
+@mixin background-img($src) {
+  background: url($src) center (center/cover) no-repeat;
+}
+
+@mixin gradient-bg($color1, $color2, $color3) {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, $color1 0%, $color2 50%, $color3 100%);
+  opacity: .6;
+}
+
+@mixin input-color($placeholder-color) {
+  // Специальный префикс, чтобы изменить цвет placeholder инпутов в разных браузерах
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &:-moz-input-placeholder {
+    color: $placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+}

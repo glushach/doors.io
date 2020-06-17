@@ -2,27 +2,47 @@
 @import 'libs/bootstrap.min';
 @import 'libs/fonts';
 
-@import 'base/variables'; 
+@import 'base/variables';
+@import 'base/mixins';
 
 @import 'blocks/navbar';
 @import 'blocks/header';
 @import 'blocks/button';
+@import 'blocks/popcat';
+@import 'blocks/title';
+@import 'blocks/adv';
+@import 'blocks/popgoods';
+@import 'blocks/form-measuring';
+@import 'blocks/reviews';
+@import 'blocks/footer';
 
 * {
   font-family: 'Museo Sans Cyrl', sans-serif;
 }
 html {
   font-size: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-size: 16px;
   background-color: $divider-color;
   color: $secondary-text-color;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  
+  .container-xl {
+    padding: 0;
+  }
+  .col {
+    padding: 0;
+  }
+  .justify-content-center {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
-
-// @import 'blocks/promo';
-// @import 'blocks/header';
-
-
-// @import 'base/media';
+@import 'base/media';
