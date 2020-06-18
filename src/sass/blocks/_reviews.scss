@@ -1,8 +1,12 @@
 .reviews {
   @include background-img('../img/bg/background.jpg');
   padding-bottom: 3rem;
+  .card-body {
+    padding: 0.6em;
+  }
   .card {
     height: 100%;
+    font-size: 1.3em;
     h5 {
       font-weight: 500;
       font-size: 1em;
