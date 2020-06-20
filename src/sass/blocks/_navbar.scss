@@ -1,6 +1,6 @@
 .navbar {
   .container-xl {
-    padding: 0.3rem 0rem;
+    padding: 0.3rem 3rem;
   }
   
   border: 1px solid $primary-text-color;
@@ -20,6 +20,7 @@
     li.nav-item>a.nav-link {
       color: $primary-text-color;
       font-weight: 500;
+      font-size: 0.95em;
       &:hover {
         color: $primary-color;
       }
