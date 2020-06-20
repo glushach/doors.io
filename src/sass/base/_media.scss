@@ -37,13 +37,14 @@
     .popgoods {
       .row {
         padding-bottom: 0rem;
-        div {
+        .margin-bottom {
           margin-bottom: 1.5rem;
           img {
             width: 60%;
           }
         }
       }
+      padding-bottom: 1.5rem;
     }
 
     .form-measuring {
@@ -52,75 +53,128 @@
       }
     }
     .reviews {
-      // .col-md-3 {
-      //   padding: 0rem 0.5rem;
-      // }
-      // .card {
-      //   font-size: 0.95em;
-      // }
-      // .card-body {
-      //   padding: 0.6em;
-      // }
-      // .carousel-control-prev {
-      //   width: 5rem;
-      // }
-
+      .col-md-5 {
+        padding: 7px;
+      }
     }
   }
 }
 
-// @media (max-width: 767px) {
-//   head {
-//     font-size: 5px;
-//   }
-//   body {
-//     font-size: 11px;
-//     .navbar {
-//       padding: 0rem 0rem;
-//       .container-xl {
-//         padding: 0rem 7rem;
-//       }
-//       &-brand {
-//         img {
-//           height: 40px;
-//         }
-//       }
-//     }
-//     .title {
-//       h4 {
-//       margin: 0rem;
-//       }
-//       margin: 0;
-//       &::before, &::after {
-//         content: '';
-//         display: none;
-//       }
-//     }
-//     form {
-//       margin: 0rem 10rem;
-//       input {
-//         margin-top: 1rem;
-//         margin-bottom: 1rem;
-//       }
-//     }
-//     .popcat {
-//       padding-bottom: 0.5em;
-//       img {
-//         width: 80%;
-//         margin-bottom: 1.5rem;
-//       }
-//     }
-//     .form-measuring {
-//       .text-uppercase {
-//         text-align: center;
-//       }
-//       .descr {
-//         text-align: center;
-//       }
-//       input {
-//         width: 90%;
-//         margin-bottom: 1rem;
-//       }
-//     }   
-//   }
-// }
+
+@media (max-width: 767px) {
+    head {
+      font-size: 5px;
+    }
+    body {
+      .navbar {
+        padding: 0rem 0rem;
+        .container-xl {
+          padding: 0rem 7rem;
+        }
+        &-brand {
+          img {
+            height: 40px;
+          }
+        }
+      }
+      .title {
+        h4 {
+        margin: 0rem;
+        }
+        margin: 0rem;
+        &::before, &::after {
+          content: '';
+          display: none;
+        }
+      }
+    header {
+      @include background-img('../img/bg/background.jpg');
+      font-size: 1.1em;
+      padding: 4rem 2rem;
+    }
+    .popcat {
+      padding-bottom: 0.5em;
+      img {
+        width: 80%;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .adv {
+      p {
+        font-size: 1.1em;
+      }
+    }
+    .form-measuring {
+      .col-sm-6 {
+        margin-top: 3rem;
+      }
+      p {
+        margin: 0rem;
+      }
+    }
+    .reviews {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  head {
+    font-size: 3px;
+  }
+  body {
+    font-size: 10px;
+    .navbar {
+      .container-xl {
+        padding: 0rem 1.5rem;
+      }
+   }
+   .title {
+    h4 {
+    padding: 1rem;
+    margin: 0rem;
+    }
+    margin: 0;
+    &::before, &::after {
+      content: '';
+      display: none;
+    }
+  }
+   header {
+    padding: 1rem 0rem;
+     p {
+      font-size: 1.2em;
+     }
+   }
+   .adv {
+      p {
+        font-size: 1.2em;
+        margin-bottom: 2rem;
+      }
+    }
+    .form-measuring {
+      .col-12 {
+        margin-top: 2rem;
+      }
+      .col-12:first-child {
+        margin-top: 0rem;
+      }
+      .img-fluid {
+        max-width: 25%;
+      }
+      .descr {
+        font-size: 1.2em;
+      }
+    }
+    .footer {
+      .nav-link {
+        padding: 0.6rem;
+      }
+    }
+  }
+}
