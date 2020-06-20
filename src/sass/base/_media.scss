@@ -123,7 +123,7 @@
     font-size: 3px;
   }
   body {
-    font-size: 12px;
+    font-size: 13px;
     .navbar {
       .container-xl {
         padding: 0rem 1.5rem;
@@ -141,15 +141,31 @@
     }
   }
    header {
+     .col-11 {
+       padding: 0rem;
+     }
     padding: 1rem 0rem;
      p {
       font-size: 1.2em;
      }
    }
+   .popcat {
+     .col-10 {
+       padding: 0rem;
+     }
+   }
    .adv {
+     .col-10 {
+       padding: 0rem;
+     }
       p {
         font-size: 1.2em;
         margin-bottom: 2rem;
+      }
+    }
+    .popgoods {
+      .col-10 {
+        padding: 0rem;
       }
     }
     .form-measuring {
