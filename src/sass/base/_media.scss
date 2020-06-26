@@ -1,5 +1,4 @@
-// screen для экранов компьютеров
-// @media screen and (max-width: 992px)
+
 @media (max-width: 1212px) {
   body {
     font-size: 16px;
@@ -129,10 +128,10 @@
     font-size: 3px;
   }
   body {
-    font-size: 13px;
+    font-size: 12px;
     .navbar {
       .container-xl {
-        padding: 0rem 1.5rem;
+        padding: 0.3rem 1.5rem;
       }
    }
    .title {
